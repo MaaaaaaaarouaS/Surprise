@@ -1,0 +1,592 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: radial-gradient(circle at 0% -50%, #000000 65%, #000000 50%, #cf152a);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    background-color: #000000;
+    justify-content: space-around;
+    padding: 0rem 0;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    margin-right: 10px;
+}
+
+.header__logo {
+    color: #eeeeee;
+    font-weight: 500;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+}
+
+.nav__item {
+    margin: 0 8px;
+}
+
+.nav__link {
+    padding: 10px;
+    color: #eeeeee;
+    font-size: 0.9rem;
+    border-radius: 5px;
+}
+
+.nav__link:hover {
+    background-color: #cf152a;
+}
+
+.header__toggle {
+    font-size: 24px;
+    color: #eeeeee;
+    display: none;
+}
+
+.header__close {
+    color: #eeeeee;
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        height: 48px;
+        justify-content: space-between;
+        padding: 0 28px;
+    }
+    .logo a {
+        font-size: 0.9rem;
+    }
+    .logo img {
+        width: 30px;
+    }
+    .header__toggle {
+        display: inline;
+    }
+    .header__close {
+        position: absolute;
+        right: 24px;
+        display: block;
+        font-size: 24px;
+        border-radius: 50%;
+    }
+    .header__close:hover {
+        background-color: red;
+    }
+    .nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        /* flex-direction: column; */
+        background-color: #222831;
+        color: #eeeeee;
+        width: 60%;
+        height: 100vh;
+        padding: 24px 0;
+        z-index: 100;
+        transition: 0.5s;
+        border-radius: 0 0 0 0%;
+    }
+    .nav__list {
+        display: flex;
+        flex-direction: column;
+    }
+    .nav__item {
+        margin: 2rem 0;
+    }
+    .show {
+        right: 0;
+    }
+}
+.Main {
+    padding: 1.5rem 0 0rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex: 1 0 auto;
+    width: 100%;
+}
+
+.View_wrap_1OgEa {
+    margin: 0 auto;
+    padding: 0 1.6rem;
+    width: 50%;
+    max-width: 80rem;
+}
+
+.Stepper_list_2y0f2 {
+    margin: 0 0 2rem;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.Stepper_list__item_Ua5YM {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Stepper_list__item_Ua5YM:before {
+    content: "";
+    position: absolute;
+    top: 1rem;
+    left: calc(50% + 1rem);
+    width: 104%;
+    height: .2rem;
+    background-color: #6e7587;
+}
+
+.Stepper_list__marker_pKk08 {
+    position: relative;
+    margin: 0 0 .8rem;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: .2rem solid #cf152a;
+    border-radius: 50%;
+}
+
+.Stepper_list__marker_pKk08:before {
+    content: "";
+    position: absolute;
+    height: 0.6rem;
+    width: 0.6rem;
+    background-color: #cf152a;
+    border-radius: 50%;
+}
+
+.Stepper_hereafter_2CKHf .Stepper_list__marker_pKk08 {
+    border-color: #6e7587;
+}
+
+.Stepper_list__itemTitle_1ql1S {
+    margin: 0;
+    margin-left:70px; 
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    word-break: keep-all;
+}
+
+
+.Stepper_list__item_Ua5YM:not(:last-child) {
+    margin: 0 2.4rem 0 0;
+}
+.Stepper_list__item_Ua5YMN {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Stepper_list__item_Ua5YMN:not(:last-child) {
+    margin: 0 2.4rem 0 0;
+}
+
+.ftitle{
+    margin: 0 0 .8rem;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.44;
+    text-align: center;
+    color: #fff;
+}
+
+.ftitle_text {
+    margin: 0 0 2rem;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.43;
+    text-align: center;
+    color: #fff;
+}
+
+h1 {
+   font-family: "Times New Roman", Times, serif;
+}
+
+/*************************New Part******************************
+
+****************************************************************/
+
+.preparation_inputs_1qX9K {
+    margin: 0 auto 1.6rem;
+}
+
+.TokenAddress_inputs__wrap_W7SIT {
+    margin: 0 auto 3.2rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-column-gap: 3rem;
+    align-items: center;
+}
+
+.TokenAddress_inputWrap_2iFxl {
+    position: relative;
+}
+
+._base-input_wrap_RoIH3 {
+    position: relative;
+    margin: 0;
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+
+
+._base-input_input_3Vmsy, ._base-input_label_3kGwW {
+    font-family: Montserrat,Helvetica Neue,Helvetica,Verdana,Arial,sans-serif;
+}
+._base-input_label_3kGwW {
+    margin: 0 0 .4rem;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.67;
+    color: #fff;
+}
+
+._base-input_container_3nCMK {
+    position: relative;
+}
+
+._base-input_defaultSize_2wXln {
+    padding: 1rem 1.6rem;
+    font-size: 1.4rem;
+    line-height: 1.43;
+}
+
+._base-input_defaultType_1U5I- {
+    color: #fff;
+    background-color: #eee;
+    border: .1rem solid #eeeeee;
+}
+._base-input_input_3Vmsy {
+    position: relative;
+    margin: 0;
+    display: block;
+    width: 600px;
+    height: 43px;
+    font-weight: 400;
+    text-align: left;
+    border-radius: .4rem;
+    box-shadow: rgba(225,225, 225, 0.35) 0px 0px 15px;
+}
+/******************************************************/
+
+/* ====================================================
+Recreating the email field from https://webflow.com/cms. Just an experiment - not as cross-browser friendly as the original.
+Changed:
+- animated gradient bar to :after element
+- flexbox for layout
+==================================================== */
+
+input {
+  border-style: none;
+  background: transparent;
+  outline: none;
+}
+
+textarea {
+  border-style: none;
+  background: transparent;
+  outline: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-width: 1600px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+.webflow-style-input {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 700px;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 2px;
+  padding: 1.4rem 2rem 1.6rem;
+  background: rgba(57, 63, 84, 0.8);
+}
+.webflow-style-input:after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 999;
+  height: 2px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  background-position: 0% 0%;
+  background: linear-gradient(to right, #FFFFFF, #cf152a, #FFFFFF, #cf152a, #FFFFFF, #cf152a);
+  background-size: 500% auto;
+  -webkit-animation: gradient 3s linear infinite;
+          animation: gradient 3s linear infinite;
+}
+
+.webflow-style-input input {
+  flex-grow: 1;
+  color: #BFD2FF;
+  font-size: 0.8rem;
+  height: 12px;
+  line-height: 2.4rem;
+  vertical-align: middle;
+}
+.webflow-style-input input::-webkit-input-placeholder {
+  color: #7881A1;
+}
+
+.webflow-style-input textarea {
+  flex-grow: 1;
+  color: #BFD2FF;
+  font-size: 1.0rem;
+  line-height: 2.4rem;
+  vertical-align: middle;
+}
+.webflow-style-input textarea::-webkit-input-placeholder {
+  color: #7881A1;
+}
+
+.webflow-style-input button {
+  color: #7881A1;
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+  vertical-align: middle;
+  transition: color 0.25s;
+}
+.webflow-style-input button:hover {
+  color: #BFD2FF;
+}
+
+.Recipients_info_2Qot1[data-v-404281ee] {
+    margin: 0 0 .8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Recipients_title_38sv8[data-v-404281ee] {
+    margin: 0;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.67;
+    color: #fff;
+}
+[tabindex], a, area, button, input, label, select, summary, textarea {
+    -ms-touch-action: manipulation;
+}
+
+.Recipients_button_3Z6t8[data-v-404281ee] {
+    padding: 0;
+    font-weight: 400;
+    text-decoration: underline;
+}
+._base-button_small_3Um7K {
+    padding: .5rem 1.2rem;
+    min-width: 3rem;
+    height: auto;
+    font-size: 1.4rem;
+    line-height: 1.67;
+}
+._base-button_link_L_RfS {
+    color: #9cd8ff;
+    background-color: transparent;
+}
+._base-button_styledButton_DVOH4 {
+    position: relative;
+    margin: 0;
+    width: auto;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: Montserrat,Helvetica Neue,Helvetica,Verdana,Arial,sans-serif;
+    font-weight: 700;
+    letter-spacing: normal;
+    border: none;
+    border-radius: .4rem;
+    transition: all .2s ease-in,text-indent 0s;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+    outline: none;
+}
+[tabindex], a, area, button, input, label, select, summary, textarea {
+    -ms-touch-action: manipulation;
+}
+[type=button], [type=reset], [type=submit], button {
+    -webkit-appearance: button;
+}
+button {
+    overflow: visible;
+    text-transform: none;
+}
+button, input, select {
+    margin: 0;
+}
+
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.custom-file-input::before {
+  content: 'upload file';
+  display: inline-block;
+  background: linear-gradient(top, #f9f9f9, #e3e3e3);
+  border: 1px solid #cf152a;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
+  margin-left: 120px;
+}
+.custom-file-input:hover::before {
+  border-color: #fff;
+}
+.custom-file-input:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
+
+span {
+  position: relative;
+  display: inline-flex;
+  width: 140px;
+  height: 35px;
+  margin: 0 15px;
+  perspective: 1000px;
+  margin-top: 35px;
+  margin-left: 40%;
+}
+span a {
+  font-size: 19px;
+  letter-spacing: 1px;
+  transform-style: preserve-3d;
+  transform: translateZ(-25px);
+  transition: transform 0.25s;
+ font-family: "Times New Roman", Times, serif;
+}
+span a:before,
+span a:after {
+  position: absolute;
+  content: "Proceed";
+  height: 45px;
+  width: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid black;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+span a:before {
+  color: #000;
+  background: #fff;
+  transform: rotateY(0deg) translateZ(25px);
+}
+span a:after {
+  color: #fff;
+  transform: rotateX(90deg) translateZ(25px);
+}
+span a:hover {
+  transform: translateZ(-25px) rotateX(-90deg);
+}
+
+
+footer {
+  grid-area: footer;
+  background-color: #000;
+  color: #fff;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.row.center {
+  justify-content: center;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 8px;
+  margin: 4px 160px;
+  cursor: pointer;
+}
+
+.button3 {
+  background-color: black; 
+  color: white; 
+  border: 2px solid #f44336;
+}
